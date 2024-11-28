@@ -1,0 +1,46 @@
+class Input extends Turtle{
+        int N = 1;
+        int Länge = 0;
+        double pi = 0;
+        double U = 0;        
+        double R = 0;
+        
+        
+        void nEckZeichnen(int N,int Länge){
+            for (int i = 0; i < N; i++) {
+              Gehen(1/N);
+              Drehen(360/N);
+              U = U + 1/N;
+              
+            }
+        
+        R = 2*Math.sin(Math.toRadians((360/N)/ 2))*((1/N)/2);    
+        pi = R / U;
+        System.out.println(pi);
+        pi=0;
+    }
+     
+        void HausVonNikolaus(int Länge){
+             Gehen(100);
+             Drehen(90);
+             Gehen(100);
+             Drehen(30);
+             Gehen(100);
+             Drehen(120);
+             Gehen(100);
+             Drehen(30);
+             Gehen(100);
+             Drehen(135);
+             Gehen(100* 1.414213562);
+             Drehen(135);
+             Gehen(100);
+             Drehen(135);
+             Gehen(100* 1.414213562);
+     }
+    
+    
+    
+    
+    
+    
+}
